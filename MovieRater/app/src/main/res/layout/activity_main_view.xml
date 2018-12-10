@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".MainActivity_Add">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/movierater"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titleTV_view"
+            android:layout_weight="0.05"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTV"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overviewTV_view"
+            android:layout_weight="0.05"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/overviewTV"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:layout_weight="0.05"
+    />
+    <RatingBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/ratingBar"
+    android:numStars="5"
+    android:visibility="gone"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvReview"
+            android:textSize="20sp"
+            android:text="No Reviews yet.\nLong press here to add your review."
+            android:layout_weight="0.05"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/languageTV_view"
+            android:layout_weight="0.05"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/languageTV"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/release_date_view"
+            android:layout_weight="0.05"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/release_dateTV"
+            android:textSize="20sp"
+
+            android:layout_weight="0.05"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suitableTV_view"
+            android:layout_weight="0.05"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/suitableTV"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+    />
+
+
+
+</LinearLayout>
