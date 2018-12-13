@@ -20,15 +20,9 @@ class LandingPage : AppCompatActivity() {
         if(movieList.isNotEmpty()) {
 
             lv_movielist.visibility = View.VISIBLE
-            val listItems = arrayOfNulls<String>(movieList.size)
 
-            for(i in movieList.indices) {
-                listItems[i] = movieList[i].title
-            }
-
-            val listAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listItems)
-            lv_movielist.adapter = listAdapter
-
+            val adapter = CustListAdapter(this, movieList)
+            lv_movielist.adapter = adapter
         }
 
         var myIntent = Intent(this, MainActivity_View::class.java)
